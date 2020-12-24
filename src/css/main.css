@@ -1,0 +1,138 @@
+:root{
+    --primary:#3445df;
+    --p_textcolor:#0d4f8a;
+}
+@import url(https://fonts.googleapis.com/css?family=Lemonada:300,regular,500,600,700);
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+    background: #ffffff;
+    font-family: Lemonada;
+    color: var(--p_textcolor);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.landing_page {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+/* .landing_page-backgrond {
+    background: url('/src/assets/svg/home.png');
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    opacity: 0.1;
+} */
+
+.footer{
+    height: 300px;
+    position: relative;
+    padding: 20px 0px;
+    position: relative;
+}
+.footer_list{
+    font-size: 29px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.footer::after {
+    content: "";
+    background: #424242;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('/src/assets/svg/footer.png');
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+.copyright{
+    margin-top: 100px;
+    text-align: center;
+    bottom: 10px;
+    font-size: 22px;
+}
+.welcome{
+    text-align: center;
+    color: var(--p_textcolor);
+    font-family: Lemonada;
+}
+.welcome h1{
+    /* margin-top: 30vh; */
+    padding: 25vh 0px 0vh;
+    font-size: 50px;
+}
+.h3{
+    font-size: 25px;
+}
+button{
+    padding: 10px 20px;
+    font-size: 30px;
+    color: inherit;
+    background: transparent;
+    border: none;
+    border: 2px solid #556aca;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 2px 3px 3px  #0d4f8a,2px 3px 3px #0d4f8a inset;
+    margin-top: 60px;
+}
+.teacher{
+    display: flex;
+    justify-content: space-between;
+    /* width: 80%; */
+    margin: auto;
+    z-index: 2;
+    position: relative;
+}
+.teacher-text{
+    font-size: 25px;
+    width: 50%;
+    margin-left: 5vw;
+    text-align: justify;
+
+}
+.teacher-image {
+    margin-right: -20px;
+    height: 100%;
+    width: 30%;
+}
+.teacher-image img{
+    width: 100%;
+    background: cover;
+}
+li{
+    list-style-type: none;
+    font-size: 20px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+}
+.routes{
+    display: flex;
+    justify-content: space-between;
+    /* background: burlywood; */
+}
+.navbtn{
+    margin: 10px;
+    font-size: 23px;
+}
