@@ -13,7 +13,7 @@ function App() {
         <Switch>
           <Route path='/'        component={HomePage} exact/>
           <Route path='/student' component={StudentGoogleForm} />
-          <Route path='/student' component={TeacherGoogleFrom} />
+          <Route path='/teacher' component={TeacherGoogleFrom} />
         </Switch>
       </div>
       </BrowserRouter>

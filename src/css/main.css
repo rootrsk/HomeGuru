@@ -556,12 +556,23 @@ li{
 
 }
 @media only screen and (max-width:500px){
+    .logo{
+        /* background: chartreuse; */
+        width: 80%;
+        margin: auto;
+        padding: 0px;
+        
+    }
+    .logo img{
+        /* margin-left: 3vw; */
+        width: 100%;
+    }
     .footer{
         height: 300px;
     }
     .footer_list{
         width: 100%;
-        margin: 20px;
+        /* margin: 20px; */
 
     }
     .footer_list-box{
