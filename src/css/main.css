@@ -578,6 +578,9 @@ li{
     .footer_list-box{
         width:100%;
     }
+    .footer_list_box-header{
+        margin: 0px 20px;
+    }
     .footer_list_box-content{
         width: 200px;
         width: 100%;

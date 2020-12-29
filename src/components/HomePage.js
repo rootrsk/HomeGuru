@@ -17,7 +17,7 @@ function HomePage() {
                         <h2>Looking For Teacher</h2>
                         <div className="h3">
                             Are you a student and looking for a teacher, just fill the form according to your requirement.
-                            We will find best teacher for you and contact you as soon as possble.
+                            We will find best teacher for you and contact you as soon as possible.
                         </div>
                         <button type='button'><Link to={'/student'}>Create Profile</Link></button>
                     </div>
@@ -34,7 +34,7 @@ function HomePage() {
                         <h2>Looking For Student</h2>
                         <div className="h3">
                             Are you a teacher and looking for a studnet, just fill the form .
-                            We will find nearest student for you and contact you as soon as possble.
+                            We will find nearest student for you and contact you as soon as possible.
                         </div>
                         <button type='button'><Link to={'/teacher'}>Create Profile</Link></button>
                     </div>
