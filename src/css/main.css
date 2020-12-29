@@ -17,7 +17,9 @@ a{
     text-decoration: none;
     color: inherit;
 }
-
+.line{
+    border-bottom: 2px solid black;
+}
 .landing_page {
     width: 100%;
     height: 100vh;
@@ -36,7 +38,6 @@ a{
     height: 300px;
     position: relative;
     padding: 20px 0px;
-    position: relative;
 }
 .footer_list{
     font-size: 29px;
@@ -46,7 +47,7 @@ a{
 }
 .footer::after {
     content: "";
-    background: #424242;
+    background: #000000;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -60,15 +61,23 @@ a{
     z-index: -1;
 }
 .copyright{
+    position: relative;
     margin-top: 100px;
     text-align: center;
     bottom: 10px;
     font-size: 22px;
 }
+.copyright:hover {
+    color: #05b8ee;
+    -webkit-text-stroke: 1px black;
+}
 .welcome{
     text-align: center;
     color: var(--p_textcolor);
     font-family: Lemonada;
+}
+.h1{
+    font-size: 40px;
 }
 .welcome h1{
     /* margin-top: 30vh; */
@@ -88,7 +97,20 @@ button{
     border-radius: 20px;
     outline: none;
     box-shadow: 2px 3px 3px  #0d4f8a,2px 3px 3px #0d4f8a inset;
-    margin-top: 60px;
+    margin: 60px 0px 20px 0px;
+}
+button:hover{
+    color: white;
+    background: var(--p_textcolor);
+    box-shadow: -1px -2px 7px #0d4270;
+    transform-style: preserve-3d;
+    
+    /* text-shadow: 0 0 5px rgb(136, 240, 240),
+    0 0 20px #89e7ff; */
+}
+.center{
+    display: grid;
+    place-items: center;
 }
 .teacher{
     display: flex;
@@ -102,17 +124,22 @@ button{
     font-size: 25px;
     width: 50%;
     margin-left: 5vw;
+    margin-right: 5px;
     text-align: justify;
 
 }
 .teacher-image {
-    margin-right: -20px;
-    height: 100%;
-    width: 30%;
+    /* margin-right: -20px; */
+    /* height: 100%; */
+    display: grid;
+    place-content: center;
+    width: 40%;
 }
 .teacher-image img{
     width: 100%;
-    background: cover;
+    background: center;
+    
+    
 }
 li{
     list-style-type: none;
@@ -121,18 +148,409 @@ li{
 .nav{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 15px 0px;
 }
 .logo{
     width: 200px;
     height: 50px;
     margin: 10px;
 }
+.logo img{
+    width: 350px;
+}
 .routes{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     /* background: burlywood; */
 }
 .navbtn{
     margin: 10px;
     font-size: 23px;
+}
+.working{
+    width: 95%;
+    margin: auto;
+    /* padding: 10px; */
+    /* padding: 100px 0px; */
+    text-align: center;
+    border: 5px solid var(--p_textcolor);
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+.working img{
+    width: 70%;
+}
+.sub-header{
+    font-weight: 700;
+    border-bottom: 2px solid black;
+    color: rgb(1, 5, 243);
+}
+.text{
+    text-align: justify;
+    margin: 10px;
+    display: flex;
+}
+.text1{
+    padding: 10px 10px 10px 3px;
+    /* border-right:2px solid black ; */
+}
+
+.text2{
+    padding: 10px 3px 10px 20px;
+}
+
+
+#background-wrap {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+@-webkit-keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@-moz-keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@-webkit-keyframes sideWays {
+    0% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 50px;
+    }
+}
+
+@-moz-keyframes sideWays {
+    0% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 50px;
+    }
+}
+
+@keyframes sideWays {
+    0% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 50px;
+    }
+}
+
+/* ANIMATIONS */
+
+.x1 {
+    -webkit-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+    left: -5%;
+    top: 5%;
+
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+}
+
+.x2 {
+    -webkit-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+    left: 5%;
+    top: 80%;
+
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    transform: scale(0.4);
+}
+
+.x3 {
+    -webkit-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+    left: 10%;
+    top: 40%;
+
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    transform: scale(0.7);
+}
+
+.x4 {
+    -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+
+    left: 20%;
+    top: 0;
+
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    transform: scale(0.3);
+}
+
+.x5 {
+    -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+    left: 30%;
+    top: 50%;
+
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+.x6 {
+    -webkit-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+    left: 50%;
+    top: 0;
+
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+.x7 {
+    -webkit-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+    left: 65%;
+    top: 70%;
+
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    transform: scale(0.4);
+}
+
+.x8 {
+    -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+    animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+
+    left: 80%;
+    top: 10%;
+
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    transform: scale(0.3);
+}
+
+.x9 {
+    -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+    left: 90%;
+    top: 50%;
+
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+}
+
+.x10 {
+    -webkit-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+    left: 80%;
+    top: 80%;
+
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    transform: scale(0.3);
+}
+
+/* OBJECTS */
+
+.bubble {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+
+    height: 200px;
+    position: absolute;
+    width: 200px;
+}
+
+.bubble:after {
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+    /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(70%, rgba(255, 255, 255, 0)));
+    /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+    /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+    /* IE10+ */
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ffffff', endColorstr='#00ffffff', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+
+    content: "";
+    height: 180px;
+    left: 10px;
+    position: absolute;
+    width: 180px;
+}
+@media only screen and (max-width:760px) {
+    li {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 20px;
+        color: inherit;
+        background: transparent;
+        border: none;
+        border: 2px solid #556aca;
+        border-radius: 20px;
+        margin: 60px 0px 20px 0px;
+    }
+
+    .h1 {
+        font-size: 20px;
+    }
+
+    .footer {
+        padding: 5px;
+        height: 150px;
+    }
+
+    .footer_list {
+        font-size: 16px;
+
+    }
+
+    .copyright {
+        position: relative;
+        margin-top: 50px;
+        font-size: 18px;
+
+    }
+
+    .welcome h1 {
+        font-size: 23px;
+    }
+
+    .h3 {
+        font-size: 12px;
+    }
+
+    .teacher-text {
+        font-size: 23px;
+    }
+
+    .logo {
+        /* width: 300px; */
+        margin: auto;
+    }
+
+    .logo img {
+        width: 300px;
+        margin: auto;
+    }
+
+    .routes {
+        display: none;
+    }
+
+    .working {
+        width: 98%;
+        padding: 0px;
+        margin: auto;
+    }
+
+    .text {
+        flex-wrap: wrap;
+    }
+
+    .working img {
+        width: 95%;
+    }
+
+    .text1 {
+        width: 100%;
+        padding: 3px;
+    }
+
+    .text2 {
+        width: 100%;
+        padding: 3px;
+    }
+
+    .bubble {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+
+        -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+        -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+
+        height: 100px;
+        position: absolute;
+        width: 100px;
+    }
+
 }

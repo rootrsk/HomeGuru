@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 function Footer() {
@@ -10,8 +11,8 @@ function Footer() {
                         Location
                     </div>
                     <div className="footer_list_box-content">
-                        <li>Gaya</li>
-                        <li>Kolkata</li>
+                        <li>Sitamarhi</li>
+                        <li>Muzaffarpur</li>
                     </div>
                 </div>
                 <div className="footer_list-box">
@@ -20,8 +21,8 @@ function Footer() {
                         Links
                     </div>
                     <div className="footer_list_box-content">
-                        <li>Teacher From</li>
-                        <li>Student Form</li>
+                        <li><Link to='/teacher'>Teacher From</Link></li>
+                        <li><Link to='/student'>Student From</Link></li>
                     </div>
                 </div>
                 </div>
@@ -31,14 +32,14 @@ function Footer() {
                         Contact Us
                     </div>
                     <div className="footer_list_box-content">
-                        <li>92854042400</li>
-                        <li>name@domin.com</li>
+                        <li>8935893928</li>
+                        <li>subodh9by4@gmail.com</li>
                     </div>
                 </div>
                 </div>
             </div>
             <div className="copyright">
-                All Right Reserved @ HomeGuru
+            2021 &#169; All Right Reserved @ <span style={{color:' rgb(1, 5, 243)'}}>HomeTutoring</span>
             </div>
         </div>
     )

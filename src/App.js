@@ -1,6 +1,8 @@
 import './css/main.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import HomePage from './components/HomePage';
+import StudentGoogleForm from './components/StudentGoogleForm'
+import TeacherGoogleFrom from './components/TeacherGoogleForm'
 
 
 function App() {
@@ -9,7 +11,9 @@ function App() {
       <BrowserRouter>
       <div>
         <Switch>
-          <Route path='/' component={HomePage} />
+          <Route path='/'        component={HomePage} exact/>
+          <Route path='/student' component={StudentGoogleForm} />
+          <Route path='/student' component={TeacherGoogleFrom} />
         </Switch>
       </div>
       </BrowserRouter>
