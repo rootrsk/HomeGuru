@@ -9,7 +9,7 @@ function Landing() {
             </div>
             <Header />
             <div className="welcome">
-                <h1>Welcome to HomeGuru</h1>
+                <h1>Welcome to HomeTutoring</h1>
                 <div className="h3">We Connent Teacher and student to each other.</div>
                 <button type='button'><Link to={'/student'}>Arrange Demo</Link></button>
             </div>
